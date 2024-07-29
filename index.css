@@ -1,0 +1,107 @@
+:root {
+  color: #bcc9df;
+  background: #232c3d;
+  font-family: sans-serif, "Helvetica Neue", Helvetica, arial, verdana;
+}
+.seleccionado {
+  background: rgb(61, 0, 99) !important;
+  border-color: rgb(255, 255, 255) !important ;
+}
+.pedido {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(193, 145, 223);
+  background-color: rgb(40, 15, 56);
+  border: 1px solid rgb(193, 145, 223);
+  padding: 1vw;
+  margin: 1vw;
+}
+.info {
+  display: flex;
+  align-content: space-around;
+  column-gap: 1em;
+  flex-wrap: wrap;
+  flex-grow: 100;
+}
+.estado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  min-width: 6em;
+  flex-shrink: 100;
+  flex-basis: content;
+  padding: 1vw;
+  border-left: solid 0.1em rgb(193, 145, 223);
+}
+.pedido * {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.key {
+  width: 3em;
+  color: rgb(120, 98, 134);
+  font-weight: bolder;
+}
+.contacto {
+  width: 7em;
+  font-weight: bolder;
+}
+.direccion {
+  width: 9em;
+}
+.total {
+  width: 4em;
+  color: green;
+  font-weight: bolder;
+  text-align: end;
+}
+.detalles {
+  white-space: wrap !important;
+  flex-shrink: 3;
+  max-width: 30em;
+}
+.progreso {
+  width: 6em;
+  border: 0.1em solid rgb(193, 145, 223);
+  border-radius: 9em;
+  padding: 0 0.2em;
+  text-align: center;
+}
+.asignado {
+  width: 7em;
+}
+
+.editorPedido {
+  display: flex;
+  flex-direction: column;
+  color: rgb(193, 145, 223);
+  background-color: rgb(40, 15, 56);
+  border: 1px solid rgb(193, 145, 223);
+  padding: 1vw;
+  margin: 1vw;
+}
+button {
+  border: 1px solid;
+  border-color: linear-gradient(90deg, rgba(183,76,250,1) 0%, rgba(176,145,223,1) 100%);
+  color: rgb(193, 145, 223);
+  background-color: rgb(40, 15, 56);
+}
+input {
+  border: 1px solid rgb(193, 145, 223);
+  outline-color: linear-gradient(90deg, rgba(183,76,250,1) 0%, rgba(176,145,223,1) 100%);
+  background-color: rgb(40, 15, 56);
+}
+input:focus{
+  outline: 1px solid white;
+}
+
+/*
+div({class :"key"},pedido.key),
+div({class :"estado"},pedido.estado),
+div({class :"asignado"},pedido.asignado),
+div({class :"contacto"},pedido.contacto),
+div({class :"direccion"},pedido.direccion),
+div({class :"total"},pedido.total),
+div({class :"detalles"},pedido.detalles)
+*/
